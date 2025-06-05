@@ -1,5 +1,7 @@
 import streamlit as st
 import os
+from PIL import Image
+from pathlib import Path
 
 # Configurar la página
 st.set_page_config(
@@ -62,8 +64,6 @@ st.markdown("""
 
 # --- CONTENIDO DE LA PÁGINA DE INTRODUCCIÓN ---
 
-st.write("Contenido de la carpeta 'assets':")
-st.write(os.listdir("assets"))
 st.title("🏡 Análisis de Airbnb en Barcelona")
 
 st.markdown("""
