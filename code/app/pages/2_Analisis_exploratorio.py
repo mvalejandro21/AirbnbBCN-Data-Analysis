@@ -109,7 +109,17 @@ st.markdown("""
     </div> 
                 """, unsafe_allow_html=True)
 
-st.image("assets/nullgap.png", caption="Gráfico de Patrones de Nulos en Listings.csv")
+from PIL import Image
+from pathlib import Path
+import streamlit as st
+
+ruta = Path(__file__).parent.parent / "assets" / "nullgap.png"
+
+try:
+    img = Image.open(ruta)
+    st.image(img, caption="Gráfico de Nulos en Listings.csv")
+except Exception as e:
+    st.error(f"No se pudo cargar la imagen: {e}")
 
 st.markdown("""
 <div class="custom-block">
@@ -127,4 +137,14 @@ st.markdown("""
     </div> 
             """, unsafe_allow_html=True)
 
-st.image("assets/excel.jpg", caption="Gráfico de Patrones de Nulos en Listings.csv")
+from PIL import Image
+from pathlib import Path
+import streamlit as st
+
+ruta = Path(__file__).parent.parent / "assets" / "excel.jpg"
+
+try:
+    img = Image.open(ruta)
+    st.image(img, caption="Gráfico de Nulos en Listings.csv")
+except Exception as e:
+    st.error(f"No se pudo cargar la imagen: {e}")
