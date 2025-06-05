@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 
 # Configurar la página
@@ -63,8 +62,6 @@ st.markdown("""
 
 # --- CONTENIDO DE LA PÁGINA DE INTRODUCCIÓN ---
 
-st.write("Contenido de la carpeta 'assets':")
-st.write(os.listdir("assets"))
 st.title("🏡 Análisis de Airbnb en Barcelona")
 
 st.markdown("""
