@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 # Configurar la página
 st.set_page_config(
@@ -61,12 +62,19 @@ st.markdown("""
 
 # --- CONTENIDO DE LA PÁGINA DE INTRODUCCIÓN ---
 
+st.write("Contenido de la carpeta 'assets':")
+st.write(os.listdir("assets"))
 st.title("🏡 Análisis de Airbnb en Barcelona")
 
 st.markdown("""
 <div class="custom-block">
     <h2>📍 ¿Por qué Barcelona?</h2>
     <p>
+            import os
+            import streamlit as st
+
+
+
         He elegido Barcelona como foco de este análisis porque es mi ciudad. Esto me permite interpretar los datos 
         no solo desde lo técnico, sino también desde el conocimiento local de barrios, turismo y dinámica urbana.
     </p>

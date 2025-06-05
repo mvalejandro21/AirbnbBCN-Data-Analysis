@@ -1,3 +1,4 @@
+from pathlib import Path
 import streamlit as st
 
 # Configurar la página
@@ -86,7 +87,17 @@ ayuda a identificar las columnas con mayor cantidad de valores nulos.
     </div> 
                 """, unsafe_allow_html=True)
     
-st.image("assets/nullamount.png", caption="Gráfico de Nulos en Listings.csv")
+from PIL import Image
+from pathlib import Path
+import streamlit as st
+
+ruta = Path(__file__).parent.parent / "assets" / "nullamount.png"
+
+try:
+    img = Image.open(ruta)
+    st.image(img, caption="Gráfico de Nulos en Listings.csv")
+except Exception as e:
+    st.error(f"No se pudo cargar la imagen: {e}")
 
   
 st.markdown("""

@@ -249,7 +249,10 @@ elif informe == "Informe de comparación de hosts":
     </div>
     """, unsafe_allow_html=True)
     st.markdown("""
-    ## 🧩 Análisis comparativo de hosts: Sweet Inn vs Ukio
+                
+    ## ⚠️ Selecciona la pagina 5 y 6 del informe de power BI para ver el análisis comparativo de hosts (no han cargado correctamente en streamlit disculpe las molestias) 
+    
+## 🧩 Análisis comparativo de hosts: Sweet Inn vs Ukio
 
 Al analizar los datos de los hosts presentes en el mercado de Airbnb en Barcelona, resulta llamativa la presencia de **empresas como Ukio, Enter o Acommodis**, que gestionan múltiples propiedades. Este hallazgo me llevó a profundizar en su **modelo de negocio y rentabilidad**, centrándome en dos casos destacados: **Ukio** y **Sweet Inn**.
 
