@@ -68,7 +68,6 @@ st.markdown("""
 <div class="custom-block">
     <h2>📍 ¿Por qué Barcelona?</h2>
     <p>
-        
         He elegido Barcelona como foco de este análisis porque es mi ciudad. Esto me permite interpretar los datos 
         no solo desde lo técnico, sino también desde el conocimiento local de barrios, turismo y dinámica urbana.
     </p>
